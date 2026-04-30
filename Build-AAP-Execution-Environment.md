@@ -363,10 +363,10 @@ podman run -it <image> pip list
 cd /home/poduser/aap_ee_envs
 
 # Edit configs
-vi execution-environment.yml
-vi requirements.txt
-vi bindep.txt
-vi requirements.yml
+vim execution-environment.yml
+vim requirements.txt
+vim bindep.txt
+vim requirements.yml
 
 # Build + push
 ./update_ee_environment.sh
