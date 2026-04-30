@@ -26,6 +26,7 @@ sudo chmod 700 /home/poduser
 grep poduser /etc/sub?id
 
 # Ensure Linger is set to yes for poduser
+loginctl enable-linger poduser
 loginctl show-user poduser | grep Linger
 sudo -u poduser podman info | grep rootless
 # EXPECTED OUTPUT BELOW:
